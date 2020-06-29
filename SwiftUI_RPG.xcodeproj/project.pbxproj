@@ -16,6 +16,9 @@
 		F57822A224A640C80012A4DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57822A024A640C80012A4DB /* LaunchScreen.storyboard */; };
 		F57822AD24A640C80012A4DB /* SwiftUI_RPGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57822AC24A640C80012A4DB /* SwiftUI_RPGTests.swift */; };
 		F57822B824A640C80012A4DB /* SwiftUI_RPGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57822B724A640C80012A4DB /* SwiftUI_RPGUITests.swift */; };
+		F57822C724A640FA0012A4DB /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57822C624A640FA0012A4DB /* Character.swift */; };
+		F57822C924A641050012A4DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57822C824A641050012A4DB /* User.swift */; };
+		F57822CB24A647E50012A4DB /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57822CA24A647E50012A4DB /* Items.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		F57822B324A640C80012A4DB /* SwiftUI_RPGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_RPGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57822B724A640C80012A4DB /* SwiftUI_RPGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_RPGUITests.swift; sourceTree = "<group>"; };
 		F57822B924A640C80012A4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57822C624A640FA0012A4DB /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		F57822C824A641050012A4DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F57822CA24A647E50012A4DB /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +107,11 @@
 		F578229124A640C30012A4DB /* SwiftUI_RPG */ = {
 			isa = PBXGroup;
 			children = (
+				F5D1AC4024A8BC7A0083D5AC /* View */,
+				F5D1AC3D24A8B91E0083D5AC /* ViewModel */,
+				F57822C524A640E10012A4DB /* DataModel */,
 				F578229224A640C30012A4DB /* AppDelegate.swift */,
 				F578229424A640C30012A4DB /* SceneDelegate.swift */,
-				F578229924A640C30012A4DB /* ContentView.swift */,
 				F578229B24A640C80012A4DB /* Assets.xcassets */,
 				F57822A024A640C80012A4DB /* LaunchScreen.storyboard */,
 				F57822A324A640C80012A4DB /* Info.plist */,
@@ -137,6 +145,31 @@
 				F57822B924A640C80012A4DB /* Info.plist */,
 			);
 			path = SwiftUI_RPGUITests;
+			sourceTree = "<group>";
+		};
+		F57822C524A640E10012A4DB /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				F57822C624A640FA0012A4DB /* Character.swift */,
+				F57822C824A641050012A4DB /* User.swift */,
+				F57822CA24A647E50012A4DB /* Items.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		F5D1AC3D24A8B91E0083D5AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5D1AC4024A8BC7A0083D5AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F578229924A640C30012A4DB /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +305,9 @@
 			files = (
 				F578229824A640C30012A4DB /* SwiftUI_RPG.xcdatamodeld in Sources */,
 				F578229324A640C30012A4DB /* AppDelegate.swift in Sources */,
+				F57822C924A641050012A4DB /* User.swift in Sources */,
+				F57822C724A640FA0012A4DB /* Character.swift in Sources */,
+				F57822CB24A647E50012A4DB /* Items.swift in Sources */,
 				F578229A24A640C30012A4DB /* ContentView.swift in Sources */,
 				F578229524A640C30012A4DB /* SceneDelegate.swift in Sources */,
 			);
